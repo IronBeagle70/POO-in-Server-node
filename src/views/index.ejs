@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <%- include('partials/head.ejs')%>
+</head>
+<body>
+
+    <div id="App">
+        <header class="app-header" id="cabecera">
+            <a class="title-header" href="#">Aplicación con POO</a>
+        </header>
+        <!-- <div class="message-container">
+            Producto agregado satisfactoriamente
+        </div> -->
+        <div class="general-container" id="general">
+            <div class="title">
+                <h2>Añade un producto</h2>
+            </div>
+            <div class="form-container">
+                <form id="product-form" class="app-form">
+                    <div class="form-input">
+                        <input type="text" id="name" placeholder="Nombre del producto" class="form-data" required autocomplete="off">
+                    </div>
+                    <div class="form-input">
+                        <input type="number"  id="price" min="1" step="0.01" placeholder="Precio del producto" class="form-data" required>
+                    </div>
+                    <div class="form-input">
+                        <input type="number"  id="year" min="2010" placeholder="Año del producto" class="form-data" required>
+                    </div>
+                    <div class="form-btn">
+                        <input type="submit" value="Guardar" class="sub-btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- lista de productos mostrados con JS -->
+    <div class="product-list flexing" id="list">
+        
+    </div>
+    <%- include('partials/scripts.ejs')%>
+</body>
+</html>

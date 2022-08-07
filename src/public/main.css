@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Header */
+.app-header{
+    width: 100%;
+    height: 2em;
+    font-size: 2rem;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+}
+
+/* MENSAJE DE GUARDAR-ELIMINAR */
+
+.message-container{
+    /* limegreen, firebrick */
+    
+    color: #232;
+    font-size: 1.5rem;
+    padding: 0.5em;
+    margin: 1rem 2rem 0;
+    /* display: none; */
+}
+
+.succes{
+    background-color: limegreen; 
+}
+.borrado{
+    background-color: firebrick; 
+}
+
+.title-header{
+    text-decoration: none;
+    color: azure;
+    margin-left: 1em;
+}
+
+.title-header:hover{
+    color: antiquewhite;
+}
+
+/* contenedor del FORM */
+
+/* TITULO */
+.general-container{
+    width: 50%;
+    max-width: 400px;
+    background-color: #eee;
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title{
+    width: 100%;
+    background-color: #eef;
+    box-shadow: 0em 0.2em rgba(34, 34, 34,0.1);
+    padding: 1em;
+    text-align: center;
+    color: #232;
+    font-size: 1.5rem;
+}
+
+/* FORMULARIO */
+
+.form-container{
+    padding: 1em;
+}
+
+.form-input{
+    margin-bottom: 1em;
+}
+
+.form-data{
+    width: 100%;
+    font-size: 1.5rem;
+    border-radius: 0.2em;
+    border: none;
+}
+
+.form-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.sub-btn{
+    font-size: 1.5rem ;
+    padding: 0.25em 0.5em;
+    border-radius: 1em;
+    border: none;
+    background-color: #aaa;
+}
+
+.sub-btn:hover{
+    background-color: #bbb;
+}
+
+/* LISTA DE PRODUCTOS */
+.product-list{
+    width: 90%;
+    max-width: 900px;
+    /* background-color: #eee; */
+    margin: 2em auto;
+    padding: 0.5em;
+    /* display: none; */
+}
+
+.list-item{
+    padding: 1em;
+}
+
+.flexing{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-list{
+    width: 270px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5em;
+}
+
+.delete-btn{
+    background-color: firebrick;
+    padding: 0.5em;
+    text-decoration: none;
+    color: #eee;
+    border-radius: 0.5em;
+}
+
+.delete-btn:hover{
+    background-color: #bb2b2b;
+}
+
+@media (max-width:600px){
+    *{
+        font-size: 16px;
+    }
+    .general-container{
+        width: 90%;
+        max-width: 500px;
+    }
+
+}
+
